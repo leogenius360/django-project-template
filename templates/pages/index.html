@@ -1,0 +1,19 @@
+
+
+{% extends "layouts/base.html" %}
+
+{% load static %}
+
+{% block main %}
+  <main>
+    <div class="container py-4">
+      <div class="p-5 mb-4 bg-dark text-white text-center rounded-3">
+        <div class="container-fluid py-5">
+          <img src="{% static 'img/logos/gds_logo.png' %}" alt="">
+          <h1 class="display-5 fw-bold">Hello, World !</h1>
+          <h1 class="display-5 fw-bold">{{ visit_counter.count }}</h1>
+        </div>
+      </div>
+    </div>
+  </main>
+{% endblock %}
